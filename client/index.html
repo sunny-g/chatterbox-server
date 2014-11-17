@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- dependencies -->
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/mustache/mustache.js"></script>
+    <script src="bower_components/tweetnacl/nacl.js"></script>
+    <!-- your scripts -->
+    <script src="env/config.js"></script>
+    <script src="scripts/crypto.js"></script>
+
+    <script id="basicTemplate" type="x-tmpl-mustache">
+      <button class="username">{{username}}</button> : {{text}} | <span class="roomname">{{roomname}}</span> | <span class="date">{{date}}</span>
+      <button class="decrypt">Decrypt</button>
+      <p></p>
+    </script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/init.js"></script>
+  </head>
+  <body>
+    <div id="main">
+
+      <!-- Controls View -->
+      <div id="controls">
+        <h1>chatterbox</h1>
+        <h3>Room Name: </h3> <input type="text" class="changeRoom">
+        <button id="changeRoom">Change Room</button>
+        <button id="goHome">Go Back to Home</button>
+        <p></p>
+        Message: <input class="msgInput" type="text">
+        Room: <input class="roomInput" type="text">
+        <button id="submitMessage">Send</button>
+        <p></p>
+      </div>
+
+      <!-- Messages View -->
+      <div id="main2"></div>
+    </div>
+  </body>
+</html>

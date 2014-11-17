@@ -1,0 +1,19 @@
+{
+  "name": "chatterbox",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2",
+    "dompurify": "~0.4.4",
+    "mustache": "~0.8.2",
+    "tweetnacl": "~0.12.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
